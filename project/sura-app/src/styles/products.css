@@ -1,0 +1,138 @@
+/* MAIN GRID CONTAINER */
+.products-grid-container {
+  display: flex;
+  flex-wrap: wrap;       /* Allow wrapping */
+  gap: 20px;             /* Space between cards */
+  justify-content: center; /* Center items */
+  padding: 20px;
+  width: 100%;
+}
+
+/* SEARCH BAR CONTAINER */
+.search-container {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* SEARCH INPUT */
+.search-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #ff5722; /* match button */
+}
+
+/* SEARCH BUTTON */
+.search-btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  background: #ff5722; /* unified color */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.search-btn:hover {
+  background: #e64a19;
+  transform: translateY(-2px);
+}
+
+/* NO RESULTS MESSAGE */
+.no-product-msg {
+  font-size: 18px;
+  padding: 20px;
+  color: #555;
+  text-align: center;
+}
+
+/* PRODUCT CARD */
+.product-card {
+  width: 240px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* PRODUCT IMAGE */
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* TITLE & PRICE */
+.product-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.product-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff5722; /* unified color */
+}
+
+/* BUTTON */
+.product-btn, .buy-button {
+  margin-top: auto;
+  padding: 10px;
+  background: #ff5722; /* unified button color */
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease, transform 0.2s ease;
+}
+
+.product-btn:hover, .buy-button:hover {
+  background: #e64a19;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    width: 90%;
+  }
+
+  .search-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .search-input, .search-btn {
+    width: 100%;
+  }
+}

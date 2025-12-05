@@ -1,0 +1,140 @@
+/* Container for the shop page */
+.shop-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Page title */
+.shop-page h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Grid container for products */
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* space between products */
+  justify-content: center; /* center the grid */
+}
+
+/* Individual product card */
+.product-card {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 250px; /* fixed width for cards */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Product image */
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Product name */
+.product-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Product price */
+.product-price {
+  color: #1f2937; /* dark gray */
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Buy button */
+.buy-button {
+  background-color: #3b82f6; /* blue */
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #2563eb;
+}
+
+/* Login prompt container */
+.login-prompt {
+  background-color: #fffae6;
+  color: #333;
+  border: 1px solid #ffd42a;
+  padding: 1rem 1.5rem;
+  margin: 1rem auto 2rem auto;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  max-width: 600px;
+}
+
+.login-prompt p {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.prompt-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.auth-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  background: #3b82f6;
+  color: white;
+}
+
+.auth-btn:hover {
+  background: #2563eb;
+}
+
+.signup-btn {
+  background: #10b981; /* green */
+}
+
+.signup-btn:hover {
+  background: #059669;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .product-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    width: 100%;
+  }
+}

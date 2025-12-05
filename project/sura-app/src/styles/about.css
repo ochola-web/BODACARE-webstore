@@ -1,0 +1,30 @@
+.about-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  font-family: Arial, sans-serif;
+}
+
+.about-page h1 {
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 2rem;
+}
+
+.about-section {
+  margin-bottom: 1.5rem;
+}
+
+.about-section h2 {
+  font-size: 1.25rem;
+  color: #1d4ed8;
+  margin-bottom: 0.5rem;
+}
+
+.about-section p {
+  color: #374151;
+  line-height: 1.6;
+}
